@@ -18,11 +18,11 @@ always@ (in1 or in2) begin
     p = {{width{1'b0}}, in2, 1'b0};
     for(i = 0; i < width; i = i + 1) begin
         case(p[1:0])
-		        2'b01: p[2*width:width+1] = p[2*width:width+1] + in1;
-		       	2'b10: p[2*width:width+1] = p[2*width:width+1] - in1;
-			      default: p[2*width:width+1] = p[2*width:width+1] + {width{1'b0}};
-		    endcase
-		    p = {p[2*width], p} >> 1;
+            2'b01: p[2*width:width+1] = p[2*width:width+1] + in1;
+            2'b10: p[2*width:width+1] = p[2*width:width+1] - in1;
+            default: p[2*width:width+1] = p[2*width:width+1] + {width{1'b0}};
+        endcase
+        p = {p[2*width], p} >> 1;
     end
 end
 
