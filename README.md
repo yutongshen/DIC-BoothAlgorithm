@@ -14,7 +14,7 @@
       |  10 | Subtract *m* from the left part of P |
       |  11 | No execution                         |
     
-    - \* all of the overflow can be ignored during the execution
+      - all of the overflow can be ignored during the execution
 
   3. **Arithmetically** shift 1 bit on P.
   4. Repeat the step ii. and iii. for 7 times.
