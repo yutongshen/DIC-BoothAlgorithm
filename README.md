@@ -1,6 +1,6 @@
-# Digital IC Design Homework
+# Digital IC Design
 
-## DIC HW2-BoothAlgorithm
+## BoothAlgorithm
 
 ### Introduction
 - Booth algorithm is a multiplication operation that multiplies two numbers in two's complement notation. The detail algorithm is described as below:
